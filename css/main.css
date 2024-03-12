@@ -1528,7 +1528,7 @@ body {
   top: 0;
   left: 0;
   position: absolute;
-  background-image: url("./img/card/play.svg");
+  background-image: url("./../img/card/play.svg");
   width: 66px;
   height: 66px;
   top: 50%;
@@ -1669,14 +1669,14 @@ body {
   display: block;
   width: 65px;
   height: 65px;
-  background-image: url("./img/card/photo-main.png");
+  background-image: url("./../img/card/photo-main.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .label-rewiew__vid {
-  background-image: url("./img/card/vid-main.png");
+  background-image: url("./../img/card/vid-main.png");
 }
 
 .feedback-block__photos {
