@@ -1528,7 +1528,7 @@ body {
   top: 0;
   left: 0;
   position: absolute;
-  background-image: url("./../img/card/play.svg");
+  background-image: url("../img/card/play.svg");
   width: 66px;
   height: 66px;
   top: 50%;
