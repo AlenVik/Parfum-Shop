@@ -59,7 +59,7 @@ function finishOrder() {
     btnFinish.addEventListener('click', function () {
       overlayOrder.classList.remove('overlay-reg-active')
       moduleFinish.classList.add('module-finish-active')
-      window.location.href = "main-page.html"
+      window.location.href = "index.html"
       localStorage.removeItem('dataBasketCurr');
     })
   }
