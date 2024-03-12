@@ -1669,14 +1669,14 @@ body {
   display: block;
   width: 65px;
   height: 65px;
-  background-image: url("./../../img/card/photo-main.png");
+  background-image: url("./img/card/photo-main.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .label-rewiew__vid {
-  background-image: url("./../../img/card/vid-main.png");
+  background-image: url("./img/card/vid-main.png");
 }
 
 .feedback-block__photos {
@@ -2654,7 +2654,7 @@ input::-webkit-inner-spin-button {
   content: "";
   width: 18px;
   height: 18px;
-  background-image: url("./../../img/icons/cost-circle.svg");
+  background-image: url("./img/icons/cost-circle.svg");
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -3113,7 +3113,7 @@ input::-webkit-inner-spin-button {
 
 @media screen and (max-width: 480px) {
   .documentation__sertificat::before {
-    background-image: url("./../img/documentation/documentation-vector-mini.png");
+    background-image: url("./img/documentation/documentation-vector-mini.png");
     width: 270px;
     height: 270px;
     background-repeat: no-repeat;
