@@ -97,7 +97,7 @@ function addAddr() {
     const html = `
          <div class="address-saved__block">
             <div class="address-saved__succes">
-              <img src="./../../../img/newaccount/check-circle.svg" alt="check icon">
+              <img src="./img/newaccount/check-circle.svg" alt="check icon">
               <span>The address has been successfully changed</span>
             </div>
             <span class="address-saved__text">The following addresses will be used when placing order by default</span>
