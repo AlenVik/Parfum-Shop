@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New account</title>
+  <link rel="stylesheet" href="./css/main.css" />
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__top-city">
+          <img src="./img/icons/mouse-pointer.svg" alt="pic location" class="header__top-city-img">
+          <a class="header__top-city" href="#!">
+            Your city: Kiev
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="./../bonus-page.html" class="nav__list-link">
+                Bonuses
+              </a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./../documentation-page.html" class="nav__list-link">
+                Documentation
+              </a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./../aboutus-page.html" class="nav__list-link">
+                About
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__top-phone">
+          <img class="header__top-phone-img" src="./img/icons/phone-call.svg" alt="phone pic">
+          <a class="header__top-phone-number" href="tel:9(937)136-77-66">
+            9(937)136-77-66
+          </a>
+        </div>
+      </div>
+      <div class="header__form">
+
+        <button class="mobile-form-btn">
+          <img class="mobile-form-btn__img" src="./img/icons/search.svg" alt="">
+        </button>
+        <div class="header__form-logo">
+          <a href="./main-page.html"><img id="headerLogo" class="logo" src="./img/icons/logo.png" alt="pic logo"></a>
+        </div>
+
+
+        <div class="header__form-catalog">
+
+          <button id="btn-catalog" class="header__form-catalog-btn catalog-hover">
+            <svg class="header__form-catalog-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 4H22" stroke="url(#paint0_linear_2148_169)" stroke-width="2" stroke-linecap="round" />
+              <path d="M2.5 12H16.5" stroke="url(#paint1_linear_2148_169)" stroke-width="2" stroke-linecap="round" />
+              <path d="M2 20H22" stroke="url(#paint2_linear_2148_169)" stroke-width="2" stroke-linecap="round" />
+              <defs>
+                <linearGradient id="paint0_linear_2148_169" x1="1.46399" y1="4.15774" x2="13.8773" y2="14.4721"
+                  gradientUnits="userSpaceOnUse">
+                  <stop class="stop-color1" stop-color="#C09E6C" />
+                  <stop class="stop-color2" offset="0.426246" stop-color="#FFEBCC" />
+                  <stop class="stop-color3" offset="1" stop-color="#BF936B" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_2148_169" x1="2.12479" y1="12.1577" x2="13.1003" y2="18.5415"
+                  gradientUnits="userSpaceOnUse">
+                  <stop class="stop-color1" stop-color="#C09E6C" />
+                  <stop class="stop-color2" offset="0.426246" stop-color="#FFEBCC" />
+                  <stop class="stop-color3" offset="1" stop-color="#BF936B" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_2148_169" x1="1.46399" y1="20.1577" x2="13.8773" y2="30.4721"
+                  gradientUnits="userSpaceOnUse">
+                  <stop class="stop-color1" stop-color="#C09E6C" />
+                  <stop class="stop-color2" offset="0.426246" stop-color="#FFEBCC" />
+                  <stop class="stop-color3" offset="1" stop-color="#BF936B" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <span class="header__form-catalog-text">
+              CATALOG
+            </span>
+          </button>
+
+
+          <ul class="header__form-catalog-item">
+            <li class="header__form-catalog-list">
+              <a class="header__form-catalog-link" href="#!">
+                Men's
+              </a>
+            </li>
+            <li class="header__form-catalog-list">
+              <a class="header__form-catalog-link" href="#!">
+                Female
+              </a>
+            </li>
+            <li class="header__form-catalog-list">
+              <a class="header__form-catalog-link" href="#!">
+                Unisex
+              </a>
+            </li>
+          </ul>
+
+
+        </div>
+
+        <div class="header__form-search">
+          <form class="form">
+            <input class="form-input" type="text" placeholder="Найти парфюм..">
+            <button class="form-btn">
+              <img class="form-btn__img" src="./img/icons/search.svg" alt="">
+            </button>
+          </form>
+        </div>
+
+        <div class="header__form-block-user">
+          <a id="userLogo" href="./registration-page.html">
+            <img src="./img/icons/user.svg" alt="pic user" class="header__form-user-img">
+          </a>
+
+          <div class="wrapper-basket">
+            <a href="./basket-page.html">
+              <img src="./img/icons/basket.svg" alt="pic basket" class="header__form-basket-img">
+              <span id="countStaff" class="count-basket">0</span>
+            </a>
+
+          </div>
+          <div class="show-message">The product is added to the cart</div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-header__top">
+
+    <div class="mobile-header__top-header">
+      <button class="mobile-header__top-close">
+        <img src="./img/icons/feedback-x.svg" alt="">
+      </button>
+      <img class="mobile-header__top-logo" src="./img/icons/mobile-logo.png" alt="">
+    </div>
+
+    <ul class="mobile-header__form-catalog">
+      <li class="mobile-header__form-catalog-list">
+        <a class="mobile-header__form-catalog-link" href="#!">
+          Men's
+        </a>
+      </li>
+      <li class="mobile-header__form-catalog-list">
+        <a class="mobile-header__form-catalog-link" href="#!">
+          Female
+        </a>
+      </li>
+      <li class="mobile-header__form-catalog-list">
+        <a class="mobile-header__form-catalog-link" href="#!">
+          Unisex
+        </a>
+      </li>
+    </ul>
+
+
+
+    <div class="mobile-header__top-city">
+      <img src="./img/icons/mouse-pointer.svg" alt="pic location" class="mobile-header__top-city-img">
+      <a class="mobile-header__top-city" href="#!">
+        Your city: Kiev
+      </a>
+    </div>
+
+    <div class="mobile-header__top-phone">
+      <img class="mobile-header__top-phone-img" src="./img/icons/phone-call.svg" alt="phone pic">
+      <a class="mobile-header__top-phone-number" href="tel:9(937)136-77-66">
+        9(937)136-77-66
+      </a>
+    </div>
+
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__list-item">
+          <a href="./bonus-page.html" class="mobile-nav__list-link">
+            Bonuses
+          </a>
+        </li>
+        <li class="mobile-nav__list-item">
+          <a href="./documentation-page.html" class="mobile-nav__list-link">
+            Documentation
+          </a>
+        </li>
+        <li class="mobile-nav__list-item">
+          <a href="./aboutus-page.html" class="mobile-nav__list-link">
+            About
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+  <div class="container container-breadcrumbs">
+    <div class="block__title">
+      <h1 class="title-page">My account</h1>
+    </div>
+
+    <div class="breadcrumbs">
+      <a class="breadcrumbs-main" href="./main-page.html">Main page</a>
+      <span class="breadcrumbs-slash">/</span>
+      <span class="breadcrumbs-current">
+        Account
+      </span>
+    </div>
+  </div>
+
+  <main>
+    <section class="newaccount">
+
+      <div class="container">
+
+        <div class="newaccount__inner">
+
+          <ul class="newaccount__block">
+
+            <li id="panel" class="newaccount__block-item active-acc">
+              <span class="newaccount__item-text">The Control Panel</span>
+              <img class="newaccount__item-img-dark " src="./img/newaccount/panel.svg" alt="panel pic">
+              <img class="newaccount__item-img-light " src="./img/newaccount/palen-hover.svg" alt="panel pic">
+            </li>
+
+            <li id="bonuses" class="newaccount__block-item">
+              <span class="newaccount__item-text">Bonuses</span>
+              <img class="newaccount__item-img-dark" src="./img/newaccount/bonus.svg" alt="bonus pic">
+              <img class="newaccount__item-img-light" src="./img/newaccount/bonus-hover.svg" alt="panel pic">
+            </li>
+
+            <li id="orders" class="newaccount__block-item">
+              <span class="newaccount__item-text">Orders</span>
+              <img class="newaccount__item-img-dark" src="./img/newaccount/orders.svg" alt="orders pic">
+              <img class="newaccount__item-img-light" src="./img/newaccount/orders-hover.svg" alt="panel pic">
+            </li>
+
+            <li id="downloads" class="newaccount__block-item">
+              <span class="newaccount__item-text">Downloads</span>
+              <img class="newaccount__item-img-dark" src="./../../../img/newaccount/downloads.svg" alt="downloads pic">
+              <img class="newaccount__item-img-light" src="./img/newaccount/downloads-hover.svg" alt="panel pic">
+            </li>
+
+            <li id="address" class="newaccount__block-item">
+              <span class="newaccount__item-text">Address</span>
+              <img class="newaccount__item-img-dark" src="./img/newaccount/address.svg" alt="address pic">
+              <img class="newaccount__item-img-light" src="./img/newaccount/address-hover.svg" alt="panel pic">
+            </li>
+
+            <li id="details" class="newaccount__block-item">
+              <span class="newaccount__item-text">Profile Details</span>
+              <img class="newaccount__item-img-dark" src="./img/newaccount/profile.svg" alt="profile pic">
+              <img class="newaccount__item-img-light" src="./img/newaccount/profile-hover.svg" alt="panel pic">
+            </li>
+
+            <button id="exit" class="newaccount__block-item">
+              <span class="newaccount__item-text">Exit</span>
+              <img class="newaccount__item-img-dark" src="./img/newaccount/exit.svg" alt="exit pic">
+              <img class="newaccount__item-img-light" src="./img/newaccount/exit-hover.svg" alt="panel pic">
+            </button>
+
+
+          </ul>
+
+
+          <div class="newaccount__info ">
+
+
+
+            <!-- //Panel/ -->
+            <p class="panel  mass_set">
+              Welcome, <span id="nameUser">Elena</span>! <br>
+              <br>
+              From the main account page, you can view <a href="!#">your recent orders</a>, customize <a
+                href="!#">payment
+                address and address
+                delivery</a>, as
+              well as <a href="#!"">change password and basic information</a>
+        </p>
+        <!-- //Panel/ -->
+
+
+
+        <!-- //Bonuses -->
+      <div class=" bonuses none mass_set">
+                <div class=" bonuses-title">
+                  <h2 class="title">Bonuses</h2>
+                </div>
+
+                <div class="bonuses__status">
+
+                  <div class="bonuses__status-info">
+
+                    <div class="bonuses__status-info-text">
+                      <span>Your status: New Customer</span>
+                      <span>Your cashback: 2%</span>
+                      <span>Points now: 100 баллов</span>
+                      <span>New Customer</span>
+
+                    </div>
+
+                    <div class="bonuses__status-info-text-img">
+                      <img src="./img/newaccount/user-stars.svg" alt="">
+                    </div>
+
+                    <div class="bonuses__status-info-input">
+                      <div id="slider"></div>
+                    </div>
+
+
+                  </div>
+
+                  <div class="bonuses__status-shopping">
+                    <div class="bonuses__status-shopping-bage">
+                      <span>0</span>/<span>5</span> purchases made
+                    </div>
+                    <span class="bonuses__status-shopping-text">To receive 3% cashback and the "Frequent Shopper"
+                      status,
+                      you need to make 5 purchases</span>
+                  </div>
+                </div>
+
+                <div class=" bonuses__story-title">
+                  <h2 class="title">Bonus History</h2>
+                </div>
+
+                <div class="bonuses__story none">
+                  <div class="bonuses__card">
+
+                    <span class="bonuses__card-date">
+                      1.07.2023
+                    </span>
+                    <div class="bonuses__card-scores">
+                      <span>Scores:</span>
+                      <span>+100</span>
+                    </div>
+                    <div class="bonuses__card-time">
+                      <span>Date: </span>
+                      <span>22.07.2023 21:05</span>
+                    </div>
+                    <div class="bonuses__card-registration">
+                      <span>Reason: </span>
+                      <span>Registration</span>
+                    </div>
+
+                  </div>
+                  <div class="bonuses__card">
+
+                    <span class="bonuses__card-date">
+                      1.07.2023
+                    </span>
+                    <div class="bonuses__card-scores">
+                      <span>Scores:</span>
+                      <span>+100</span>
+                    </div>
+                    <div class="bonuses__card-time">
+                      <span>Date: </span>
+                      <span>22.07.2023 21:05</span>
+                    </div>
+                    <div class="bonuses__card-registration">
+                      <span>Reason: </span>
+                      <span>Registration</span>
+                    </div>
+
+                  </div>
+                  <div class="bonuses__card">
+
+                    <span class="bonuses__card-date">
+                      1.07.2023
+                    </span>
+                    <div class="bonuses__card-scores">
+                      <span>Scores:</span>
+                      <span>+100</span>
+                    </div>
+                    <div class="bonuses__card-time">
+                      <span>Date: </span>
+                      <span>22.07.2023 21:05</span>
+                    </div>
+                    <div class="bonuses__card-registration">
+                      <span>Reason: </span>
+                      <span>Registration</span>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="bonuses__story-pagination">
+                  <div class="catalog__pagination">
+
+                    <a href="#!" class="catalog__pagination-arrow arrow-left">
+                      <svg class="catalog__pagination-arrow-left" xmlns="http://www.w3.org/2000/svg" width="36"
+                        height="36" viewBox="0 0 36 36" fill="none">
+                        <rect x="0.5" y="0.5" width="35" height="35" rx="5.5" fill="#211E1C" />
+                        <rect x="0.5" y="0.5" width="35" height="35" rx="5.5" stroke="url(#paint0_linear_13_4356)" />
+                        <path d="M20.7 12.6L13.5 18L20.7 23.4" stroke="#BEAE97" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <defs>
+                          <linearGradient id="paint0_linear_13_4356" x1="-0.964824" y1="5.67857" x2="36.7406"
+                            y2="7.24506" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#C09E6C" />
+                            <stop offset="0.426246" stop-color="#FFEBCC" />
+                            <stop offset="1" stop-color="#BF936B" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </a>
+
+
+                    <a class="catalog__pagination-link" href="#!"> <span>1</span></a>
+
+
+                    <a href="#!" class="catalog__pagination-arrow arrow-right">
+                      <svg class="catalog__pagination-arrow-right" xmlns="http://www.w3.org/2000/svg" width="36"
+                        height="36" viewBox="0 0 36 36" fill="none">
+                        <rect x="0.5" y="0.5" width="35" height="35" rx="5.5" fill="#211E1C" />
+                        <rect x="0.5" y="0.5" width="35" height="35" rx="5.5" stroke="url(#paint0_linear_13_4346)" />
+                        <path d="M15.3 12.6L22.5 18L15.3 23.4" stroke="#BEAE97" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <defs>
+                          <linearGradient id="paint0_linear_13_4346" x1="-0.964824" y1="5.67857" x2="36.7406"
+                            y2="7.24506" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#C09E6C" />
+                            <stop offset="0.426246" stop-color="#FFEBCC" />
+                            <stop offset="1" stop-color="#BF936B" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+
+                    </a>
+
+
+                  </div>
+                </div>
+
+
+          </div>
+          <!-- //Bonuses -->
+
+
+
+
+          <!-- //Orders/ -->
+          <div class=" orders none mass_set">
+            <div class=" orders-title">
+              <h2 class="title">Orders</h2>
+            </div>
+
+            <div class="orders__noorders ">
+              <img src="./../../../img/newaccount/sign.svg" alt="">
+              <span class="orders__noorders-text">You haven't made any orders yet :(</span>
+            </div>
+
+
+            <div class="orders__wait none">
+              <div class="orders__wait-block">
+
+                <div class="orders__wait-block-info">
+                  <div class="orders__wait-block-info-date">
+                    <span>Заказ от </span>
+                    <span>23.07.2023</span>
+                  </div>
+
+                  <div class="orders__wait-block-info-pay">
+                    <span class="orders__wait-block-info-pay-sum">к оплате 200 $</span>
+                    <button class="orders__wait-block-info-pay-cancel">
+                      <span>Отменить</span>
+                    </button>
+                  </div>
+                </div>
+
+                <button class="orders__wait-block-btn">
+                  <span>Оплатить</span>
+                </button>
+
+                <div class="orders__wait-block-delivery">
+                  <div class="orders__wait-block-delivery-method">
+                    <span>Доставка курьером:</span>
+                    <span>Ожидает оплаты</span>
+                  </div>
+
+                  <div class="orders__wait-block-delivery-date">
+                    <span>Ожидаемая дата:</span>
+                    <span>2 августа</span>
+                  </div>
+                </div>
+
+                <button class="orders__wait-block-structure">
+                  <span>Состав заказа</span>
+
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.40002 10.1992L12 13.7992L15.6 10.1992" stroke="#BEAE97" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+
+                </button>
+
+                <div class="orders__wait-block-products none">
+
+                  <div class="orders__wait-block-products-block">
+                    <span>1.Парфюм По Мотивам Arte Nouveau by Plum Impression</span>
+                    <span>(10мл. Х 100 )</span>
+                  </div>
+
+                  <div class="orders__wait-block-products-block">
+                    <span>2.Парфюм По Мотивам Arte Nouveau by Plum Impression</span>
+                    <span>(10мл. Х 5 )</span>
+                  </div>
+
+                  <div class="orders__wait-block-products-block">
+                    <span>3.Парфюм По Мотивам Arte Nouveau by Plum Impression</span>
+                    <span>(30мл. Х 10 )</span>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- //Orders/ -->
+
+
+
+
+          <!-- //Downloads -->
+          <div class="downloads none mass_set">
+            <div class=" downloads-title">
+              <h2 class="title">Downloads</h2>
+            </div>
+
+            <div class="downloads__info ">
+              <img src="./../../../img/newaccount/sign.svg" alt="">
+              <span>There are no downloads available</span>
+            </div>
+
+          </div>
+          <!-- //Downloads -->
+
+
+
+
+          <!-- //Address/ -->
+          <div class="address none mass_set">
+            <div class="address-title">
+              <h2 class="title">Address</h2>
+            </div>
+
+
+            <div class="address-without ">
+              <span class="address__text">The following addresses will be used when placing orders by default</span>
+
+              <span class="address__pay">Billing address:</span>
+
+              <button class="address__add-btn">Add</button>
+            </div>
+
+
+            <div class="address-add none">
+
+
+              <span class="address-add__payaddress">Billing address:</span>
+              <form class="address-add__form">
+
+
+                <div class="initials">
+                  <label class="address-add-form-name">
+                    <span>Name*</span>
+                    <input name="firstName" type="text" autocomplete="off">
+                  </label>
+
+                  <label class="address-add-form-surname">
+                    <span>Surname*</span>
+                    <input name="secondName" type="text" autocomplete="off">
+                  </label>
+                </div>
+
+
+                <label>
+                  <span>Country/region*</span>
+                  <input name="country" type="text" autocomplete="off">
+                </label>
+                <label>
+                  <span>Address*</span>
+                  <input name="address" type="text" autocomplete="off">
+                </label>
+
+                <label>
+                  <span>Locality*</span>
+                  <input name="city" type="text" autocomplete="off">
+                </label>
+
+                <label>
+                  <span>Region/district*</span>
+                  <input name="area" type="text" autocomplete="off">
+                </label>
+                <label>
+                  <span>Postal code*</span>
+                  <input name="index" type="text" autocomplete="off">
+                </label>
+
+                <label>
+                  <span>Phone*</span>
+                  <input name="phone" type="number" autocomplete="off">
+                </label>
+
+                <label>
+                  <span>Email*</span>
+                  <input name="mail" type="email" autocomplete="off">
+                </label>
+
+                <div class="btn-block">
+                  <button class="btn address-add__form-btn">
+                    <span>Save</span>
+                  </button>
+
+                  <button class="btn address-add__form-btn-cancel">
+                    <span>Cancel</span>
+                  </button>
+
+                </div>
+              </form>
+
+
+
+
+            </div>
+
+            <div class="address-saved none">
+
+
+            </div>
+
+          </div>
+          <!-- //Address/ -->
+
+
+
+
+          <!-- //Details  -->
+          <div class="details none mass_set">
+            <div class="details-title">
+              <h2 class="title">Profile details</h2>
+            </div>
+
+            <form class="details-add__form">
+
+
+              <div class="initials">
+                <label class="details-add-form-name">
+                  <span>Name*</span>
+                  <input id="newName" type="text" autocomplete="off">
+                </label>
+
+                <label class="details-add-form-surname">
+                  <span>Surname*</span>
+                  <input id="newSecondName" type="text" autocomplete="off">
+                </label>
+              </div>
+
+
+              <label>
+                <span>Email*</span>
+                <input id="newEmail" type="email" autocomplete="off">
+              </label>
+
+
+              <span>Change the password</span>
+
+              <label class="current__pass pass">
+                <span>Valid password (do not fill in to keep the old one)</span>
+                <input id="currPass" type="password">
+                <img class="current__pass-img" src="./img/newaccount/eye.svg" alt="eye pic">
+                <img class="current__pass-img none" src="./img/newaccount/close-eye.svg" alt="close eye pic">
+              </label>
+
+
+              <label class="new__pass pass">
+                <span>New password (do not fill in to keep the old one)</span>
+                <input id="newPass" type="password">
+                <img class="new__pass-img" src="./img/newaccount/eye.svg" alt="eye pic">
+                <img class="new__pass-img none" src="./img/newaccount/close-eye.svg" alt="close eye pic">
+              </label>
+
+
+              <label class="repeat-new__pass pass">
+                <span>Confirm the new password</span>
+                <input id="repeatNewPass" type="password" autocomplete="off">
+                <img class="repeat-new__pass-img" src="./img/newaccount/eye.svg" alt="eye pic">
+                <img class="repeat-new__pass-img none" src="./img/newaccount/close-eye.svg" alt="close eye pic">
+              </label>
+
+
+              <button id="btnSaveChanges" class="btn details-add__form-btn">
+                <span>Save changes</span>
+              </button>
+
+            </form>
+          </div>
+          <!-- //Details  -->
+
+        </div>
+
+
+      </div>
+
+
+      </div>
+    </section>
+
+  </main>
+  <div class="overlay"></div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <img class="logo" src="./img/icons/logo.png" alt="pic logo">
+      </div>
+
+      <div class="footer__inner">
+        <div class="footer__info">
+          <div class="footer__info-address">
+            <img src="./img/icons/location.svg" alt="" class="footer__info-address-img">
+            <span class="footer__info-address-text">
+              USA, Jersey City, Bill John Street,24 <br>
+            </span>
+          </div>
+          <div class="footer__info-schedule">
+            <img src="./img/icons/schedule.svg" alt="" class="footer__info-schedule-img">
+            <span class="footer__info-schedule-text">Daily from 9:00 to 18:00</span>
+          </div>
+        </div>
+
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <img src="./img/icons/whatsapp.svg" alt="whatsapp icon" class="footer__social-item-img">
+            <a class="footer__social-item-link" href="#!">We are on Whatsapp</a>
+          </li>
+
+          <li class="footer__social-item">
+            <img src="./img/icons/telegram.svg" alt="telegram icon" class="footer__social-item-img">
+            <a class="footer__social-item-link" href="#!">We are at Telegram</a>
+          </li>
+
+
+          <li class="footer__social-item">
+            <img src="./img/icons/email.svg" alt="email icon" class="footer__social-item-img">
+            <a href="mailto:parfumpomotivam@gmail.com" class="footer__social-item-link">usaparfumbig@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <div class="footer__shop">
+          <img src="./img/icons/house.svg" alt="house pic" class="footer__shop-img">
+          <div class="footer__shop-info">
+            <span class="footer__shop-info-text">CC David-Man</span>
+            <span class="footer__shop-info-text">СС 425232345342</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__privacy">
+        <span class="footer__privacy-text">© UsaPafrumOpt 2024</span>
+        <a class="footer__privacy-text" href="#!">Privacy policy</a>
+      </div>
+
+    </div>
+  </footer>
+  <script type="module" src="./js/modules/userOnline.js"></script>
+  <script type="module" src="./js/modules/newaccount-settings.js"></script>
+  <script type="module" src="./js/modules/myaccount.js"></script>
+  <script type="module" src="./js/modules/add-address.js"></script>
+  <script type="module" src="./js/modules/catalog-hover.js"></script>
+  <script type="module" src="./js/modules/show-eye.js"></script>
+</body>
+
+</html>

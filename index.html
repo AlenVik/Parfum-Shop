@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main page</title>
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;700&display=swap"
+    as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&display=swap" as="style">
+
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/nouislider.min.css">
+
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__top-city">
+          <img src="./img/icons/mouse-pointer.svg" alt="pic location" class="header__top-city-img">
+          <a class="header__top-city" href="#!">
+            Your city: Kiev
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="./../bonus-page.html" class="nav__list-link">
+                Bonuses
+              </a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./../documentation-page.html" class="nav__list-link">
+                Documentation
+              </a>
+            </li>
+            <li class="nav__list-item">
+              <a href="./../aboutus-page.html" class="nav__list-link">
+                About
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__top-phone">
+          <img class="header__top-phone-img" src="./img/icons/phone-call.svg" alt="phone pic">
+          <a class="header__top-phone-number" href="tel:9(937)136-77-66">
+            9(937)136-77-66
+          </a>
+        </div>
+      </div>
+      <div class="header__form">
+
+        <button class="mobile-form-btn">
+          <img class="mobile-form-btn__img" src="./img/icons/search.svg" alt="">
+        </button>
+        <div class="header__form-logo">
+          <a href="./main-page.html"><img id="headerLogo" class="logo" src="./img/icons/logo.png" alt="pic logo"></a>
+        </div>
+
+
+        <div class="header__form-catalog">
+
+          <button id="btn-catalog" class="header__form-catalog-btn catalog-hover">
+            <svg class="header__form-catalog-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 4H22" stroke="url(#paint0_linear_2148_169)" stroke-width="2" stroke-linecap="round" />
+              <path d="M2.5 12H16.5" stroke="url(#paint1_linear_2148_169)" stroke-width="2" stroke-linecap="round" />
+              <path d="M2 20H22" stroke="url(#paint2_linear_2148_169)" stroke-width="2" stroke-linecap="round" />
+              <defs>
+                <linearGradient id="paint0_linear_2148_169" x1="1.46399" y1="4.15774" x2="13.8773" y2="14.4721"
+                  gradientUnits="userSpaceOnUse">
+                  <stop class="stop-color1" stop-color="#C09E6C" />
+                  <stop class="stop-color2" offset="0.426246" stop-color="#FFEBCC" />
+                  <stop class="stop-color3" offset="1" stop-color="#BF936B" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_2148_169" x1="2.12479" y1="12.1577" x2="13.1003" y2="18.5415"
+                  gradientUnits="userSpaceOnUse">
+                  <stop class="stop-color1" stop-color="#C09E6C" />
+                  <stop class="stop-color2" offset="0.426246" stop-color="#FFEBCC" />
+                  <stop class="stop-color3" offset="1" stop-color="#BF936B" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_2148_169" x1="1.46399" y1="20.1577" x2="13.8773" y2="30.4721"
+                  gradientUnits="userSpaceOnUse">
+                  <stop class="stop-color1" stop-color="#C09E6C" />
+                  <stop class="stop-color2" offset="0.426246" stop-color="#FFEBCC" />
+                  <stop class="stop-color3" offset="1" stop-color="#BF936B" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <span class="header__form-catalog-text">
+              CATALOG
+            </span>
+          </button>
+
+
+          <ul class="header__form-catalog-item">
+            <li class="header__form-catalog-list">
+              <a class="header__form-catalog-link" href="#!">
+                Men's
+              </a>
+            </li>
+            <li class="header__form-catalog-list">
+              <a class="header__form-catalog-link" href="#!">
+                Female
+              </a>
+            </li>
+            <li class="header__form-catalog-list">
+              <a class="header__form-catalog-link" href="#!">
+                Unisex
+              </a>
+            </li>
+          </ul>
+
+
+        </div>
+
+        <div class="header__form-search">
+          <form class="form">
+            <input class="form-input" type="text" placeholder="Найти парфюм..">
+            <button class="form-btn">
+              <img class="form-btn__img" src="./img/icons/search.svg" alt="">
+            </button>
+          </form>
+        </div>
+
+        <div class="header__form-block-user">
+          <a id="userLogo" href="./registration-page.html">
+            <img src="./img/icons/user.svg" alt="pic user" class="header__form-user-img">
+          </a>
+
+          <div class="wrapper-basket">
+            <a href="./basket-page.html">
+              <img src="./img/icons/basket.svg" alt="pic basket" class="header__form-basket-img">
+              <span id="countStaff" class="count-basket">0</span>
+            </a>
+
+          </div>
+          <div class="show-message">The product is added to the cart</div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-header__top">
+
+    <div class="mobile-header__top-header">
+      <button class="mobile-header__top-close">
+        <img src="./img/icons/feedback-x.svg" alt="">
+      </button>
+      <img class="mobile-header__top-logo" src="./img/icons/mobile-logo.png" alt="">
+    </div>
+
+    <ul class="mobile-header__form-catalog">
+      <li class="mobile-header__form-catalog-list">
+        <a class="mobile-header__form-catalog-link" href="#!">
+          Men's
+        </a>
+      </li>
+      <li class="mobile-header__form-catalog-list">
+        <a class="mobile-header__form-catalog-link" href="#!">
+          Female
+        </a>
+      </li>
+      <li class="mobile-header__form-catalog-list">
+        <a class="mobile-header__form-catalog-link" href="#!">
+          Unisex
+        </a>
+      </li>
+    </ul>
+
+
+
+    <div class="mobile-header__top-city">
+      <img src="./img/icons/mouse-pointer.svg" alt="pic location" class="mobile-header__top-city-img">
+      <a class="mobile-header__top-city" href="#!">
+        Your city: Kiev
+      </a>
+    </div>
+
+    <div class="mobile-header__top-phone">
+      <img class="mobile-header__top-phone-img" src="./img/icons/phone-call.svg" alt="phone pic">
+      <a class="mobile-header__top-phone-number" href="tel:9(937)136-77-66">
+        9(937)136-77-66
+      </a>
+    </div>
+
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__list-item">
+          <a href="./bonus-page.html" class="mobile-nav__list-link">
+            Bonuses
+          </a>
+        </li>
+        <li class="mobile-nav__list-item">
+          <a href="./documentation-page.html" class="mobile-nav__list-link">
+            Documentation
+          </a>
+        </li>
+        <li class="mobile-nav__list-item">
+          <a href="./aboutus-page.html" class="mobile-nav__list-link">
+            About
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+  <main>
+    <div class="swiper swiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/header-slider/1.webp" alt="">
+          <h1 class="swiper-title">
+            Wholesale perfumes with a margin of up to 100% and delivery in USA and the EU
+          </h1>
+          <p class="swiper-text">
+            There are more <span>500</span> flavors available
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/header-slider/2.webp" alt="">
+          <h1 class="swiper-title">
+            Wholesale perfumes with a margin of up to 100% and delivery in USA and the EU
+          </h1>
+          <p class="swiper-text">
+            There are more <span>500</span> flavors available
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/header-slider/5.webp" alt="">
+          <h1 class="swiper-title">
+            Wholesale perfumes with a margin of up to 100% and delivery in USA and the EU
+          </h1>
+          <p class="swiper-text">
+            There are more <span>500</span> flavors available
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/header-slider/4.webp" alt="">
+          <h1 class="swiper-title-right">
+            Wholesale perfumes with a margin of up to 100% and delivery in USA and the EU
+          </h1>
+          <p class="swiper-text-right ">
+            There are more <span>500</span> flavors available
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/header-slider/3.webp" alt="">
+          <h1 class="swiper-title-right">
+            Wholesale perfumes with a margin of up to 100% and delivery in USA and the EU
+          </h1>
+          <p class="swiper-text-right ">
+            There are more <span>500</span> flavors available
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+    <section class="popular">
+      <div class="container">
+        <div class="popular-title">
+          <h2 class="title">Popular flavors</h2>
+        </div>
+        <div class="popular__block">
+
+          <div class="popular__block-item victoria">
+            <div class="popular__block-info">
+              <span class="popular__block-info-forwho">
+                For her
+              </span>
+              <p class="popular__block-info-brand">Victoria Secret Bombshell</p>
+              <button class="btn popular__block-info-btn">
+                <span>into a basket</span>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="popular__block-item aventus ">
+            <div class="popular__block-info">
+              <span class="popular__block-info-forwho">
+                For him
+              </span>
+              <p class="popular__block-info-brand">Aventus By Creed</p>
+              <button class="btn popular__block-info-btn">
+                <span>into a basket</span>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="popular__block-item narcotiqe">
+            <div class="popular__block-info">
+              <span class="popular__block-info-forwho">
+                Unisex
+              </span>
+              <p class="popular__block-info-brand">Narcotiqe</p>
+              <button class="btn popular__block-info-btn">
+                <span>into a basket</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section class="bonus">
+      <div class="container">
+        <div class="bonus-title">
+          <h2 class="title">Bonuses from purchases</h2>
+        </div>
+      </div>
+      <div class="bonus__block">
+        <div class="container">
+          <p class="bonus__block-сashback">Get cashback for purchases</p>
+          <span class="bonus__block-scores">Bonus points for registration and purchases</span>
+          <a href="./bonus-page.html" class="btn bonus__block-btn">
+            <span>Learn more</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog-title">
+          <h2 class="title">
+            Catalog
+          </h2>
+        </div>
+        <div class="catalog__settings">
+
+          <div class="catalog__form ">
+            <div class="catalog__settings-filter">
+              <span>Filters</span>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.2857 11C22.2226 11 20.4869 12.5534 20.0874 14.6H8.85714C8.62981 14.6 8.4118 14.6948 8.25105 14.8636C8.09031 15.0324 8 15.2613 8 15.5C8 15.7387 8.09031 15.9676 8.25105 16.1364C8.4118 16.3052 8.62981 16.4 8.85714 16.4H20.0874C20.4869 18.4475 22.2217 20 24.2857 20C26.3497 20 28.0846 18.4475 28.484 16.4H31.1429C31.3702 16.4 31.5882 16.3052 31.7489 16.1364C31.9097 15.9676 32 15.7387 32 15.5C32 15.2613 31.9097 15.0324 31.7489 14.8636C31.5882 14.6948 31.3702 14.6 31.1429 14.6H28.484C28.0846 12.5534 26.3497 11 24.2857 11ZM24.2857 12.8C25.7163 12.8 26.8571 13.9979 26.8571 15.5C26.8571 17.0021 25.7163 18.2 24.2857 18.2C22.8551 18.2 21.7143 17.0021 21.7143 15.5C21.7143 13.9979 22.8551 12.8 24.2857 12.8ZM15.7143 20C13.6511 20 11.9154 21.5534 11.516 23.6H8.85714C8.62981 23.6 8.4118 23.6948 8.25105 23.8636C8.09031 24.0324 8 24.2613 8 24.5C8 24.7387 8.09031 24.9676 8.25105 25.1364C8.4118 25.3052 8.62981 25.4 8.85714 25.4H11.516C11.9154 27.4475 13.6503 29 15.7143 29C17.7783 29 19.5131 27.4475 19.9126 25.4H31.1429C31.3702 25.4 31.5882 25.3052 31.7489 25.1364C31.9097 24.9676 32 24.7387 32 24.5C32 24.2613 31.9097 24.0324 31.7489 23.8636C31.5882 23.6948 31.3702 23.6 31.1429 23.6H19.9126C19.5131 21.5534 17.7783 20 15.7143 20ZM15.7143 21.8C17.1449 21.8 18.2857 22.9979 18.2857 24.5C18.2857 26.0021 17.1449 27.2 15.7143 27.2C14.2837 27.2 13.1429 26.0021 13.1429 24.5C13.1429 22.9979 14.2837 21.8 15.7143 21.8Z"
+                  fill="url(#paint0_linear_45_7072)" />
+                <defs>
+                  <linearGradient id="paint0_linear_45_7072" x1="7.35678" y1="13.8393" x2="32.4601" y2="15.2299"
+                    gradientUnits="userSpaceOnUse">
+                    <stop class="stop1" stop-color="#C09E6C" />
+                    <stop class="stop2" offset="0.426246" stop-color="#FFEBCC" />
+                    <stop class="stop3" offset="1" stop-color="#BF936B" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
+            </div>
+            <div class="catalog__block none">
+
+              <div class="brend__catalog">
+
+                <div class="brend__catalog-form">
+
+                  <div class="brend__catalog-form-block">
+                    <span class="brend__catalog-form-block-title">Brand</span>
+                    <svg class="brend__catalog-form-block--img2 " xmlns="http://www.w3.org/2000/svg" width="40"
+                      height="40" viewBox="0 0 40 40" fill="none">
+                      <path d="M14 17L20 23L26 17" stroke="#BEAE97" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <form class="select2 none" data-state="">
+                    <div class="select__title2 " data-default="Option 0">
+                      <span class="select__title-span2 ">All brands</span>
+                      <svg class="select__title-img2 " xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 40 40" fill="none">
+                        <path d="M14 17L20 23L26 17" stroke="#BEAE97" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <div class="select__content2">
+
+                      <div class="select__content2-search none">
+                        <input type="text">
+
+                        <button>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                            fill="none">
+                            <path
+                              d="M11.6557 19C16.074 19 19.6557 15.4183 19.6557 11C19.6557 6.58172 16.074 3 11.6557 3C7.23745 3 3.65573 6.58172 3.65573 11C3.65573 15.4183 7.23745 19 11.6557 19Z"
+                              stroke="url(#paint0_linear_2297_8914)" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M21.6557 21L17.3557 16.7" stroke="url(#paint1_linear_2297_8914)" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <defs>
+                              <linearGradient id="paint0_linear_2297_8914" x1="3.22692" y1="5.52381" x2="19.9849"
+                                y2="6.22003" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C09E6C" />
+                                <stop offset="0.426246" stop-color="#FFEBCC" />
+                                <stop offset="1" stop-color="#BF936B" />
+                              </linearGradient>
+                              <linearGradient id="paint1_linear_2297_8914" x1="17.2405" y1="17.3782" x2="21.7442"
+                                y2="17.5653" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C09E6C" />
+                                <stop offset="0.426246" stop-color="#FFEBCC" />
+                                <stop offset="1" stop-color="#BF936B" />
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+
+
+
+                      <input id="single2Select" class="select__input2" type="radio" name="allbrands" />
+                      <label for="single2Select" class="select__label2">
+                        <span>All</span>
+                      </label>
+
+                      <input id="single2Select0" class="select__input2" type="radio" name="allbrands" />
+                      <label for="single2Select0" class="select__label2">
+                        <span>All brands</span>
+                      </label>
+
+                      <input id="single2Select1" class="select__input2" type="radio" name="armandbasi" />
+                      <label for="single2Select1" class="select__label2"><span>Armand Basi</span></label>
+
+
+                      <input id="single2Select2" class="select__input2" type="radio" name="banderas" />
+                      <label for="single2Select2" class="select__label2"><span>Antonio Banderas</span></label>
+
+                      <input id="single2Select3" class="select__input2" type="radio" name="burberry" />
+                      <label for="single2Select3" class="select__label2"><span>Burberry</span></label>
+
+                      <input id="single2Select4" class="select__input2" type="radio" name="davidoff" />
+                      <label for="single2Select4" class="select__label2"><span>Davidoff</span></label>
+
+                      <input id="single2Select5" class="select__input2" type="radio" name="hugoboss" />
+                      <label for="single2Select5" class="select__label2"><span>Hugoboss</span></label>
+
+                      <input id="single2Select6" class="select__input2" type="radio" name="trussardi" />
+                      <label for="single2Select6" class="select__label2"><span>Trussardi</span></label>
+                    </div>
+                  </form>
+                </div>
+
+
+              </div>
+
+              <div class="cost__catalog">
+                <div class="cost__catalog-btn">
+                  <span>Cost</span>
+                  <svg class="cost__catalog-img" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                    viewBox="0 0 40 40" fill="none">
+                    <path d="M14 17L20 23L26 17" stroke="#BEAE97" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+
+                <form class="cost__catalog-form none">
+                  <div id="sliderFilter"></div>
+                  <div class="cost__catalog-form-num">
+                    <span> 0 $</span>
+                    <span>100 $</span>
+                  </div>
+                </form>
+
+              </div>
+
+              <div class="gender__catalog">
+                <div class="gender__catalog-btn">
+                  <span>Gender</span>
+                  <svg class="gender__catalog-img" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                    viewBox="0 0 40 40" fill="none">
+                    <path d="M14 17L20 23L26 17" stroke="#BEAE97" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+
+                <div class="gender__catalog-choise none">
+                  <div class="gender__catalog-block">
+                    <label class="gender__catalog-block-label">
+                      <input type="checkbox" id="woman" name="gender">
+                      <div class="gender-checkbox"></div>
+                    </label>
+                    <span>Women's (4)</span>
+                  </div>
+                  <div class="gender__catalog-block">
+                    <label class="gender__catalog-block-label">
+                      <input type="checkbox" id="man" name="gender">
+                      <div class="gender-checkbox"></div>
+                    </label>
+                    <span>Men's (6)</span>
+                  </div>
+                  <div class="gender__catalog-block">
+                    <label class="gender__catalog-block-label">
+                      <input type="checkbox" id="unisex" name="gender">
+                      <div class="gender-checkbox"></div>
+                    </label>
+                    <span>Unisex (10)</span>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+
+              <div class="note__catalog">
+
+                <div class="note__catalog-form">
+
+                  <div class="note__catalog-form-block">
+                    <span class="note__catalog-form-block-title">Notes</span>
+                    <svg class="note__catalog-form-block--img2 " xmlns="http://www.w3.org/2000/svg" width="40"
+                      height="40" viewBox="0 0 40 40" fill="none">
+                      <path d="M14 17L20 23L26 17" stroke="#BEAE97" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <form class="select3 none" data-state="">
+                    <div class="select__title3 " data-default="Option 0">
+                      <span class="select__title-span3 ">All Notes</span>
+                      <svg class="select__title-img3 " xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 40 40" fill="none">
+                        <path d="M14 17L20 23L26 17" stroke="#BEAE97" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <div class="select__content3">
+
+                      <div class="select__content3-search none">
+                        <input type="text">
+
+                        <button>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                            fill="none">
+                            <path
+                              d="M11.6557 19C16.074 19 19.6557 15.4183 19.6557 11C19.6557 6.58172 16.074 3 11.6557 3C7.23745 3 3.65573 6.58172 3.65573 11C3.65573 15.4183 7.23745 19 11.6557 19Z"
+                              stroke="url(#paint0_linear_2297_8914)" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M21.6557 21L17.3557 16.7" stroke="url(#paint1_linear_2297_8914)" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <defs>
+                              <linearGradient id="paint0_linear_2297_8914" x1="3.22692" y1="5.52381" x2="19.9849"
+                                y2="6.22003" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C09E6C" />
+                                <stop offset="0.426246" stop-color="#FFEBCC" />
+                                <stop offset="1" stop-color="#BF936B" />
+                              </linearGradient>
+                              <linearGradient id="paint1_linear_2297_8914" x1="17.2405" y1="17.3782" x2="21.7442"
+                                y2="17.5653" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C09E6C" />
+                                <stop offset="0.426246" stop-color="#FFEBCC" />
+                                <stop offset="1" stop-color="#BF936B" />
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+
+
+
+                      <input id="single3Select" class="select__input3" type="radio" name="allnotes" />
+                      <label for="single3Select" class="select__label3">
+                        <span>All notes</span>
+                      </label>
+
+                      <input id="single3Select0" class="select__input3" type="radio" name="allnotes" />
+                      <label for="single3Select0" class="select__label3">
+                        <span>All notes</span>
+                      </label>
+
+                      <input id="single3Select1" class="select__input3" type="radio" name="woman" />
+                      <label for="single3Select1" class="select__label3"><span>Woman</span></label>
+
+
+                      <input id="single3Select2" class="select__input3" type="radio" name="flowers" />
+                      <label for="single3Select2" class="select__label3"><span>Flowers</span></label>
+
+                      <input id="single3Select3" class="select__input3" type="radio" name="water" />
+                      <label for="single3Select3" class="select__label3"><span>Water</span></label>
+
+                      <input id="single3Select4" class="select__input3" type="radio" name="land" />
+                      <label for="single3Select4" class="select__label3"><span>Land</span></label>
+
+                      <input id="single3Select5" class="select__input3" type="radio" name="fruits" />
+                      <label for="single3Select5" class="select__label3"><span>Fruits</span></label>
+                    </div>
+                  </form>
+                </div>
+
+
+              </div>
+
+
+              <button id="resetBtn" class="catalog__btn-close">
+                <span>Reset</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path d="M26 14L14 26" stroke="#776C5B" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M14 14L26 26" stroke="#776C5B" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <div class="select__form">
+            <form class="select" data-state="">
+              <div class="select__title " data-default="Option 0">
+                <span class="select__title-span ">Sort</span>
+                <svg class="select__title-img " width="14" height="8" viewBox="0 0 14 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L7 7L13 1" stroke="#BEAE97" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="select__content">
+                <input id="singleSelect0" class="select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect0" class="select__label">
+                  <span>By popularity</span>
+                </label>
+
+                <input id="singleSelect1" class="select__input" type="radio" name="popular" />
+                <label for="singleSelect1" class="select__label"><span>By popularity</span></label>
+
+
+                <input id="singleSelect2" class="select__input" type="radio" name="raiting" />
+                <label for="singleSelect2" class="select__label"><span>By rating</span></label>
+
+                <input id="singleSelect3" class="select__input" type="radio" name="fromlast" />
+                <label for="singleSelect3" class="select__label"><span>Sorting from the last one</span></label>
+
+                <input id="singleSelect4" class="select__input" type="radio" name="descending" />
+                <label for="singleSelect4" class="select__label"><span>Price in descending order</span></label>
+
+                <input id="singleSelect5" class="select__input" type="radio" name="ascending" />
+                <label for="singleSelect5" class="select__label"><span>Price is in ascending order</span></label>
+
+
+              </div>
+            </form>
+          </div>
+
+          <div class="setting-hid" style="width: 305px;"></div>
+
+        </div>
+
+        <div class="catalog__card ">
+
+        </div>
+
+        <div class="catalog__pagination ">
+
+          <a href="#!" class="catalog__pagination-arrow arrow-left">
+            <svg class="catalog__pagination-arrow-left" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+              viewBox="0 0 36 36" fill="none">
+              <rect x="0.5" y="0.5" width="35" height="35" rx="5.5" fill="#211E1C" />
+              <rect x="0.5" y="0.5" width="35" height="35" rx="5.5" stroke="url(#paint0_linear_13_4356)" />
+              <path d="M20.7 12.6L13.5 18L20.7 23.4" stroke="#BEAE97" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <defs>
+                <linearGradient id="paint0_linear_13_4356" x1="-0.964824" y1="5.67857" x2="36.7406" y2="7.24506"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#C09E6C" />
+                  <stop offset="0.426246" stop-color="#FFEBCC" />
+                  <stop offset="1" stop-color="#BF936B" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+
+          <a class="catalog__pagination-link pagination-arrow-active" href="#!"> <span>1</span></a>
+          <a class="catalog__pagination-link" href="#!"> <span>2</span></a>
+          <a class="catalog__pagination-link" href="#!"> <span>3</span></a>
+          <a class="catalog__pagination-link hid-pag" href="#!"> <span>4</span></a>
+          <a class="catalog__pagination-link" href="#!"> <span>...</span></a>
+          <a class="catalog__pagination-link" href="#!"> <span>39</span></a>
+          <a class="catalog__pagination-link hid-pag" href="#!"> <span>40</span></a>
+          <a class="catalog__pagination-link hid-pag" href="#!"> <span>41</span></a>
+
+          <a href="#!" class="catalog__pagination-arrow arrow-right">
+            <svg class="catalog__pagination-arrow-right" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+              viewBox="0 0 36 36" fill="none">
+              <rect x="0.5" y="0.5" width="35" height="35" rx="5.5" fill="#211E1C" />
+              <rect x="0.5" y="0.5" width="35" height="35" rx="5.5" stroke="url(#paint0_linear_13_4346)" />
+              <path d="M15.3 12.6L22.5 18L15.3 23.4" stroke="#BEAE97" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <defs>
+                <linearGradient id="paint0_linear_13_4346" x1="-0.964824" y1="5.67857" x2="36.7406" y2="7.24506"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#C09E6C" />
+                  <stop offset="0.426246" stop-color="#FFEBCC" />
+                  <stop offset="1" stop-color="#BF936B" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+          </a>
+
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <img class="logo" src="./img/icons/logo.png" alt="pic logo">
+      </div>
+
+      <div class="footer__inner">
+        <div class="footer__info">
+          <div class="footer__info-address">
+            <img src="./img/icons/location.svg" alt="" class="footer__info-address-img">
+            <span class="footer__info-address-text">
+              USA, Jersey City, Bill John Street,24 <br>
+            </span>
+          </div>
+          <div class="footer__info-schedule">
+            <img src="./img/icons/schedule.svg" alt="" class="footer__info-schedule-img">
+            <span class="footer__info-schedule-text">Daily from 9:00 to 18:00</span>
+          </div>
+        </div>
+
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <img src="./img/icons/whatsapp.svg" alt="whatsapp icon" class="footer__social-item-img">
+            <a class="footer__social-item-link" href="#!">We are on Whatsapp</a>
+          </li>
+
+          <li class="footer__social-item">
+            <img src="./img/icons/telegram.svg" alt="telegram icon" class="footer__social-item-img">
+            <a class="footer__social-item-link" href="#!">We are at Telegram</a>
+          </li>
+
+
+          <li class="footer__social-item">
+            <img src="./img/icons/email.svg" alt="email icon" class="footer__social-item-img">
+            <a href="mailto:parfumpomotivam@gmail.com" class="footer__social-item-link">usaparfumbig@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <div class="footer__shop">
+          <img src="./img/icons/house.svg" alt="house pic" class="footer__shop-img">
+          <div class="footer__shop-info">
+            <span class="footer__shop-info-text">CC David-Man</span>
+            <span class="footer__shop-info-text">СС 425232345342</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__privacy">
+        <span class="footer__privacy-text">© UsaPafrumOpt 2024</span>
+        <a class="footer__privacy-text" href="#!">Privacy policy</a>
+      </div>
+
+    </div>
+  </footer>
+  <div class="overlay"></div>
+  <script type="module" src="./js/modules/swiper.js"></script>
+  <script type="module" src="./js/modules/userOnline.js"></script>
+  <script type="module" src="./js/modules/catalog-hover.js"></script>
+  <script type="module" src="./js/modules/random-cards.js"></script>
+  <script type="module" src="./js/modules/filter.js"></script>
+  <script type="module" src="./js/modules/filter-brand-common.js"></script>
+  <script type="module" src="./js/modules/filter-brend.js"></script>
+  <script type="module" src="./js/modules/filter-note-common.js"></script>
+  <script type="module" src="./js/modules/filter-note.js"></script>
+  <script type="module" src="./js/modules/select.js"></script>
+  <script type="module" src="./js/modules/gender-catalog.js"></script>
+  <script type="module" src="./js/modules/cost-catalog.js"></script>
+  <script type="module" src="./js/modules/count-basket.js"></script>
+
+</body>
+
+</html>
